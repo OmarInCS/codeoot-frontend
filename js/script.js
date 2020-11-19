@@ -197,7 +197,7 @@ function handleJoinGame() {
             .then((response) => response.text())
             .then((template) => {
                 
-                var rendered = Mustache.render(template, current_game);
+                var rendered = Mustache.render(template);
                 document.getElementById("main-content").innerHTML = rendered;
                 loadCodeEditor();
                 console.log(current_player);
