@@ -1,0 +1,26 @@
+<form class="container">
+    <div>
+        <h1 id="game-name">{{game_name}}</h1>
+    </div>
+    <div class="fixed-size">
+        <h1>
+            <span>Game Pin:</span>
+            <span class="square-tag">
+                {{game_pin}}
+            </span>
+        </h1>
+    </div>
+    <div class="fixed-size">
+        <h1>
+            <span>#Coders:</span>
+            <span class="circle-tag" id="num-of-coders">5</span>
+        </h1>
+    </div>
+    <div class="fixed-size">
+        <h1>
+            <span>Time:</span>
+            <span class="square-tag">{{duration}}</span>
+        </h1>
+    </div>
+    <div class="button fixed-size" onclick="toCountDownPage();">Start</div>
+</form>

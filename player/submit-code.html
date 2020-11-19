@@ -1,0 +1,17 @@
+<form id="submit-code-form" class="container">
+    <h2>
+        Submit Code
+    </h2>
+    <div class="controls">
+        <input id="code-mode" list="code-modes" placeholder="Choose a language" value="python">
+        <datalist id="code-modes" onchange="loadCodeEditor();">
+            <option value="javascript">
+            <option value="python">
+            <option value="xml">
+            <option value="css">
+        </datalist>
+        <button class="button" type="button" onclick="handleCodeSubmit();">Submit</button>
+    </div>
+    <textarea name="" id="ta-code"></textarea>
+    
+</form>
